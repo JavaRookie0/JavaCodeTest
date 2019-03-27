@@ -1,25 +1,27 @@
 package fizzbuzz;
 
-import fizzbuzz.Main;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
 
 public class TestStage {
 	
     @Test
     public void testOne() {
-    	Main main = new Main();
-    	assertNotNull(main.runStageOne());
-    	assertEquals("Buzz",main.runStageOne().get(99));
+    	StageOne stageOne = new StageOne();
+    	assertEquals("1",stageOne.output(1));
+    	assertEquals("Fizz",stageOne.output(3));
+    	assertEquals("Buzz",stageOne.output(5));
+    	assertEquals("FizzBuzz",stageOne.output(15));
     }
     
     @Test
     public void testTwo() {
-    	Main main = new Main();
-    	assertNotNull(main.runStageTwo());
-    	assertEquals("Buzz",main.runStageTwo().get(99));
+        StageTwo stageTwo = new StageTwo();
+        assertEquals("1",stageTwo.output(1));
+        assertEquals("Fizz",stageTwo.output(3));
+        assertEquals("Buzz",stageTwo.output(5));
+        assertEquals("FizzBuzz",stageTwo.output(15));
     }
 
 }
