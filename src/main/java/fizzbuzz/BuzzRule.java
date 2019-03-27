@@ -1,19 +1,22 @@
+package fizzbuzz;
+
 /**
  * Created by haoxianluo on 2019/3/19.
  */
-public class FizzRule extends Rule {
+public class BuzzRule extends Rule {
+
     @Override
     protected String execute(int number) {
-        return "Fizz";
+        return "Buzz";
     }
 
     @Override
     protected boolean verify(int number, Boolean isContains) {
 
         if (isContains) {
-            return (number % 3 == 0 || String.valueOf(number).contains("3"));
+            return (number % 5 == 0 || String.valueOf(number).contains("5"));
         }
 
-        return number % 3 == 0;
+        return number % 5 == 0;
     }
 }

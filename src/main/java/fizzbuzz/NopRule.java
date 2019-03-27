@@ -1,3 +1,5 @@
+package fizzbuzz;
+
 /**
  * Created by haoxianluo on 2019/3/19.
  */

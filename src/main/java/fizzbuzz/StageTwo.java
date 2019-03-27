@@ -1,3 +1,5 @@
+package fizzbuzz;
+
 /**
  * #Stage 2 - new requirements
  . A number is Fizz if it is divisible by 3 or if it has a 3 in it

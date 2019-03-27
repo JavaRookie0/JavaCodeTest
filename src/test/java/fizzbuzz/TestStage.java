@@ -1,9 +1,12 @@
+package fizzbuzz;
+
+import fizzbuzz.Main;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-public class testStage {
+public class TestStage {
 	
     @Test
     public void testOne() {
