@@ -53,6 +53,8 @@ public class TestStage {
     public void testBuzzRule() {
         BuzzRule buzzRule = new BuzzRule();
 
+        assertEquals("Buzz",buzzRule.execute(1));
+
         assertEquals(false,buzzRule.verify(1, false));//Not multiples of five return false
         assertEquals(true,buzzRule.verify(5, false));//the multiples of five return true
         assertEquals(true,buzzRule.verify(10, false));//the multiples of five  return true
@@ -70,6 +72,8 @@ public class TestStage {
     public void testFizzRule() {
         FizzRule fizzRule = new FizzRule();
 
+        assertEquals("Fizz",fizzRule.execute(1));
+
         assertEquals(false,fizzRule.verify(1, false));//Not multiples of 3 return false
         assertEquals(true,fizzRule.verify(3, false));//The multiples of 3 return true
         assertEquals(true,fizzRule.verify(6, false));//The multiples of 3  rrturn true
@@ -85,6 +89,8 @@ public class TestStage {
     @Test
     public void testFizzBuzzRule() {
         FizzBuzzRule fizzBuzzRule = new FizzBuzzRule();
+
+        assertEquals("FizzBuzz",fizzBuzzRule.execute(1));
 
         assertEquals(false,fizzBuzzRule.verify(1, false));//Not multiples of 3 and 5
         assertEquals(false,fizzBuzzRule.verify(20, false));//multiples of 5 but 3
@@ -108,6 +114,7 @@ public class TestStage {
     public void testNopRule() {
         NopRule nopRule = new NopRule();
 
+        assertEquals("1",nopRule.execute(1));
         assertEquals(true,nopRule.verify(1, false));
         assertEquals(true,nopRule.verify(111, true));
 
