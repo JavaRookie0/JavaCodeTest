@@ -16,10 +16,12 @@ public class Main {
     
     public List<String> runStageTwo() {
         StageTwo stageTwo = new StageTwo();
-        List<String> stageTwoList = new ArrayList<String>();
+        List<String> stageTwoList;
+        stageTwoList = new ArrayList<String>();
         for (int i = 1; i <= 100; i++) {
             stageTwoList.add(stageTwo.output(i));
         }
+
         return stageTwoList;
     }
     
@@ -27,6 +29,7 @@ public class Main {
     	Main main = new Main();
     	List<String> one = main.runStageOne();
     	List<String> two = main.runStageTwo();
+
     	System.out.println(one);
     	System.out.println(two);
     }
